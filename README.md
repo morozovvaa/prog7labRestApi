@@ -76,13 +76,27 @@ uvicorn main:app --reload
 - ReDoc: `http://localhost:8000/redoc`
 - OpenAPI спецификация: `http://localhost:8000/openapi.json`
 
+
+После запуска приложение будет доступно по адресу http://localhost:8000.
+<img width="679" height="230" alt="image" src="https://github.com/user-attachments/assets/5399b246-4844-4f2c-8d43-8b1d034baa78" />
+
+Автоматическая документация:
+• Swagger UI: http://localhost:8000/docs
+<img width="1826" height="912" alt="image" src="https://github.com/user-attachments/assets/0a9d4e7e-e545-427c-8adc-b08b7d69dc4a" />
+
+• ReDoc: http://localhost:8000/redoc
+<img width="1835" height="894" alt="image" src="https://github.com/user-attachments/assets/79ba03bd-af4d-44f5-a5ec-ac91136fc5fa" />
+
+• OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
+<img width="1795" height="895" alt="image" src="https://github.com/user-attachments/assets/203803c1-4a6d-4714-9266-d2ce98be5ecb" />
+
 ![Запуск приложения](screenshot-1)
 
 ![Swagger UI](screenshot-2)
 
 ![ReDoc](screenshot-3)
 
-![OpenAPI JSON](screenshot-4)
+![OpenAPI JSON](<img width="1795" height="895" alt="image" src="https://github.com/user-attachments/assets/203803c1-4a6d-4714-9266-d2ce98be5ecb" />)
 
 ---
 
