@@ -108,7 +108,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 
 **Результат:** Код ответа 200, возвращен список из трех книг
 
-![GET /api/books](screenshot-5)
+<img width="1756" height="672" alt="image" src="https://github.com/user-attachments/assets/0fe4c554-3706-4aed-819c-6e74cc1d3f64" />
 
 ---
 
