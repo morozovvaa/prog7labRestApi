@@ -118,7 +118,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 
 **Результат:** Код ответа 200, возвращена книга "Война и мир"
 
-![GET /api/books/1](screenshot-6)
+<img width="1755" height="376" alt="image" src="https://github.com/user-attachments/assets/b15f3639-844a-4cfd-9693-b50f1907d8fb" />
 
 ---
 
@@ -138,7 +138,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 
 **Результат:** Код ответа 201, создана новая книга с ID 4
 
-![POST /api/books](screenshot-7)
+<img width="1762" height="386" alt="image" src="https://github.com/user-attachments/assets/47cadb4d-813d-4807-ae9c-07d95842953a" />
 
 ---
 
@@ -155,7 +155,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 
 **Результат:** Код ответа 200, обновлен год издания книги
 
-![PATCH /api/books/1](screenshot-8)
+<img width="1754" height="381" alt="image" src="https://github.com/user-attachments/assets/a2617ae9-c338-4ada-9de4-c78e85dfc97a" />
 
 ---
 
@@ -165,13 +165,13 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 
 **Результат:** Код ответа 204 (No Content), книга успешно удалена
 
-![DELETE /api/books/2](screenshot-9)
+<img width="1765" height="180" alt="image" src="https://github.com/user-attachments/assets/497853ba-0589-41b0-8e22-e5a50143d2ba" />
 
 **Проверка удаления:** `GET /api/books/2`
 
 **Результат:** Код ответа 404, книга не найдена
 
-![GET /api/books/2 после удаления](screenshot-10)
+<img width="1757" height="351" alt="image" src="https://github.com/user-attachments/assets/f585fe80-00b8-4afc-8b26-cdb792155f1c" />
 
 ---
 
@@ -191,7 +191,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 
 **Результат:** Код ответа 422 (Unprocessable Entity), ошибка валидации - год превышает текущий
 
-![Тестирование валидации](screenshot-11)
+<img width="1762" height="562" alt="image" src="https://github.com/user-attachments/assets/cdbcdecf-3b08-4d32-9021-86c1d10cc448" />
 
 ---
 
@@ -233,7 +233,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 - `year_from` - минимальный год издания
 - `year_to` - максимальный год издания
 
-![Фильтрация](screenshot-12)
+<img width="1817" height="852" alt="image" src="https://github.com/user-attachments/assets/c9c903af-1568-4bd5-a598-eb6640451d5e" />
 
 **Тестирование:**
 
@@ -241,13 +241,13 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 
 **Результат:** Возвращены только книги Льва Толстого
 
-![Фильтр по автору](screenshot-13)
+<img width="1759" height="411" alt="image" src="https://github.com/user-attachments/assets/be4d611b-5a60-4988-838a-e20e19b8ca74" />
 
 **2. Фильтр по годам:** `GET /api/books?year_from=1860&year_to=1870`
 
 **Результат:** Возвращены книги, изданные в период 1860-1870 годов
 
-![Фильтр по годам](screenshot-14)
+<img width="1762" height="537" alt="image" src="https://github.com/user-attachments/assets/10c1f8f2-6ee9-45ed-a20b-1b758837149d" />
 
 ---
 
@@ -258,7 +258,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 - `skip` - количество книг для пропуска (offset)
 - `limit` - максимальное количество книг в ответе
 
-![Пагинация](screenshot-15)
+<img width="1442" height="821" alt="image" src="https://github.com/user-attachments/assets/78f32c40-582e-4b58-8463-299014fdd11f" />
 
 ---
 
@@ -270,7 +270,7 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 - Распределение по авторам
 - Распределение по векам
 
-![Статистика](screenshot-16)
+<img width="1750" height="895" alt="image" src="https://github.com/user-attachments/assets/11d0b0a4-11af-4725-97b1-026f4d14adff" />
 
 ---
 
@@ -310,6 +310,10 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 - Реализована функция `verify_api_key()` для проверки ключа
 - При неверном ключе возвращается ошибка 403 Forbidden
 
+**Аунтетификация**
+<img width="807" height="380" alt="image" src="https://github.com/user-attachments/assets/971b855d-efe3-4dd4-96b4-0d4dfc674f6a" />
+
+
 **Защищены операции изменения данных:**
 
 - `POST /api/books` - создание книги
@@ -327,6 +331,13 @@ OpenAPI спецификация (JSON): http://localhost:8000/openapi.json
 ```
 X-API-Key: secret-api-key-12345
 ```
+
+####  POST /api/books  
+без аутентификации  
+<img width="1760" height="351" alt="image" src="https://github.com/user-attachments/assets/876b223a-7f4b-4bb1-83af-1f4c6e8101b2" />
+
+с аутентификацией  
+<img width="1758" height="384" alt="image" src="https://github.com/user-attachments/assets/fb39d8a4-b402-4f0e-a332-eba5d00f90dd" />
 
 ---
 
